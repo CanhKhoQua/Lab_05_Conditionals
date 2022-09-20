@@ -1,4 +1,5 @@
-public class MovieLine {
+public class MovieLine
+{
     public static void main(String[] args)
     {
         int age = 15;
