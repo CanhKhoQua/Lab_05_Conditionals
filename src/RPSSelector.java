@@ -2,8 +2,9 @@ public class RPSSelector {
     // First example has to be R P or S
     public static void main(String[] args)
     {
-        String playerMove = "R"; /// must be R, P or S
+        String playerMove = "P"; /// must be R, P or S
 
+        // Closed set can only be R P S
         if (playerMove.toUpperCase() == "R")
         {
             System.out.println("Rock!");
@@ -15,6 +16,25 @@ public class RPSSelector {
         else
         {
             System.out.println("Scissors!");
+        }
+
+        // Open set can be R P S or anything else
+
+        if (playerMove.toUpperCase() == "R")
+        {
+            System.out.println("Rock!");
+        }
+        else if (playerMove.toUpperCase() == "P")
+        {
+            System.out.println("Paper!");
+        }
+        else if (playerMove.toUpperCase() == "S")
+        {
+            System.out.println("Scissors!");
+        }
+        else // Error conditions
+        {
+            System.out.println("Not a move!");
         }
 
     }
