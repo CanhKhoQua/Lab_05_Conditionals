@@ -7,18 +7,18 @@ public class RPSGame
 
         if (playerA.equalsIgnoreCase("R"))
         {
+            // PlayerB code crossed against the Player A rock move
             if (playerB.equalsIgnoreCase("R"))
             {
-                // PlayerB code crossed against the Player A rock move
-                System.out.println("");
+                System.out.println("Rock vs Rock. It's a TIE!");
             }
             else if (playerB.equalsIgnoreCase("P"))
             {
-                System.out.println("");
+                System.out.println("Paper covers Rock. Player B wins!");
             }
-            else if (playerB.equalsIgnoreCase("S"))
+            else // Player must be Scissors
             {
-                System.out.println("");
+                System.out.println("Rock breaks Scissors. Player A wins!");
             }
         }
 
@@ -26,15 +26,15 @@ public class RPSGame
         {
             if (playerB.equalsIgnoreCase("R"))
             {
-                System.out.println("");
+                System.out.println("Paper covers Rock. PlayerA wins!");
             }
             else if (playerB.equalsIgnoreCase("P"))
             {
-                System.out.println("");
+                System.out.println("Paper vs Paper. It's a TIE!");
             }
-            else if (playerB.equalsIgnoreCase("S"))
+            else // Player B must be Scissors
             {
-                System.out.println("");
+                System.out.println("Scissors cut Paper. Player B wins!");
             }
         }
 
@@ -42,15 +42,15 @@ public class RPSGame
         {
             if (playerB.equalsIgnoreCase("R"))
             {
-                System.out.println("");
+                System.out.println("Rock breaks Scissors. Player B wins!");
             }
             else if (playerB.equalsIgnoreCase("P"))
             {
-                System.out.println("");
+                System.out.println("Scissors cut Paper. Player A wins!");
             }
-            else if (playerB.equalsIgnoreCase("S"))
+            else // Player B must be Scissors
             {
-                System.out.println("");
+                System.out.println("Scissors vs Scissors. It's a TIE!");
             }
         }
 
